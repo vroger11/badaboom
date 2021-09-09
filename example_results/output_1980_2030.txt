@@ -1,0 +1,15 @@
+Unique asteroid encontered and observed until today: 25808
+Unique asteroid predicted from today until 2200: 11215
+Biggest asteroids between 1980 and 2030:
+|   asteroid_neo_reference_id | asteroid_name               |   estimated_diameter_min |   estimated_diameter_max |   absolute_magnitude_h | links                                         |
+|----------------------------:|:----------------------------|-------------------------:|-------------------------:|-----------------------:|:----------------------------------------------|
+|                     2001036 | 1036 Ganymed (A924 UB)      |                 37.5452  |                  83.9537 |                   9.25 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2001036 |
+|                     2000433 | 433 Eros (A898 PA)          |                 21.8049  |                  48.7573 |                  10.43 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2000433 |
+|                     2001866 | 1866 Sisyphus (1972 XA)     |                  8.64082 |                  19.3215 |                  12.44 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2001866 |
+|                     2004954 | 4954 Eric (1990 SQ)         |                  8.06408 |                  18.0318 |                  12.59 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2004954 |
+|                     2001627 | 1627 Ivar (1929 SH)         |                  7.7724  |                  17.3796 |                  12.67 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2001627 |
+|                     2003552 | 3552 Don Quixote (1983 SA)  |                  6.80072 |                  15.2069 |                  12.96 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2003552 |
+|                     2002212 | 2212 Hephaistos (1978 SB)   |                  5.73528 |                  12.8245 |                  13.33 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2002212 |
+|                     2025916 | 25916 (2001 CP44)           |                  4.88152 |                  10.9154 |                  13.68 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2025916 |
+|                     2001980 | 1980 Tezcatlipoca (1950 LA) |                  4.61907 |                  10.3286 |                  13.8  | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2001980 |
+|                     2005587 | 5587 (1990 SB)              |                  4.57673 |                  10.2339 |                  13.82 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2005587 |
