@@ -138,13 +138,14 @@ def main(api_key, fn_figure_events, fn_figure_asteroid_size, start_year=1980, en
     end_date = pd.Timestamp(year=end_year, month=12, day=31)
 
     if start_year <= today_timestamp.year:
+        end = today_timestamp if today_timestamp.year <= end_year else end_date
         asteroid_encontered = adp.df_neo_feed[(adp.df_neo_feed["date"] >= begin_date) & (adp.df_neo_feed["date"] < today_timestamp)]["asteroid_id"].unique()
-        print(f"Unique asteroid encountered and observed from {start_year} until today: {asteroid_encontered.shape[0]}")
+        print(f"Unique asteroid encountered and observed from {start_year} until {end.date()}: {asteroid_encontered.shape[0]}")
 
     if end_year >= today_timestamp.year:
         begin = today_timestamp if today_timestamp.year >= start_year else begin_date
         asteroid_predicted = adp.df_neo_feed[(adp.df_neo_feed["date"] > begin) & (adp.df_neo_feed["date"] <= end_date)]["asteroid_id"].unique()
-        print(f"Unique asteroid predicted to encounter from {begin} until {end_year}: {asteroid_predicted.shape[0]}")
+        print(f"Unique asteroid predicted to encounter from {begin.date()} until {end_year}: {asteroid_predicted.shape[0]}")
 
     # Save the 10 biggest asteroids from events between start_year and end_year
     asteroid_ids_selected = adp.df_neo_feed[(adp.df_neo_feed["date"] >= begin_date) & (adp.df_neo_feed["date"] <= end_date)]["asteroid_id"]

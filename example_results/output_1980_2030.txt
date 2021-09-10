@@ -1,6 +1,6 @@
 Unique asteroid encontered and observed until today: 25808
-Unique asteroid encountered and observed from 1980 until today: 25810
-Unique asteroid predicted to encounter from 2021-09-10 16:25:35.650280 until 2030: 11211
+Unique asteroid encountered and observed from 1980 until 2021-09-10: 25810
+Unique asteroid predicted to encounter from 2021-09-10 until 2030: 11211
 |   asteroid_neo_reference_id | asteroid_name               |   estimated_diameter_min |   estimated_diameter_max |   absolute_magnitude_h | links                                         |
 |----------------------------:|:----------------------------|-------------------------:|-------------------------:|-----------------------:|:----------------------------------------------|
 |                     2001036 | 1036 Ganymed (A924 UB)      |                 37.5452  |                  83.9537 |                   9.25 | http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2001036 |
