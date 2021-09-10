@@ -17,4 +17,4 @@ To compute figures and statistics, you can use the `compute_statistics.py` scrip
 python compute_statistics.py --help
 ```
 
-A result example between the years 1980 and 2030 is available in example_results. It was made the 09-09-2021.
+A result example between the years 1980 and 2030 is available in example_results. It was made the 10-09-2021.
