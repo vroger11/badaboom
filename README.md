@@ -1,10 +1,10 @@
 # BadaBoom
 
-Library that parse and retrieve the 'Asteroids - NeoWs' database.
-It also provides a simple program to compute figures and statistical information.
-This database is provided by NASA, more information is available [here](https://api.nasa.gov/).
+Library that parse and retrieve the 'Asteroids - NeoWs' database and fireballs database from NASA.
+It also provides simple programs to compute figures and statistical information.
+Database are provided by NASA, more information is available [here](https://api.nasa.gov/).
 
-In this work, the focus is to better understand/visualize the asteroids getting near the earth.
+In this work, the focus is to better understand/visualize the events from out of the earth.
 
 ## Installation
 
@@ -12,9 +12,13 @@ The following repository was tested using the environment provided in the enviro
 
 ## Usage and example
 
-To compute figures and statistics, you can use the `compute_statistics.py` script. If you need help with it, your can type:
+To compute figures and statistics, you can use the `compute_statistics` python scripts. If you need help with it, you can type:
 ```bash
-python compute_statistics.py --help
+python compute_NeoWs_statistics.py --help
+python compute_fireballs_statistics.py --help
 ```
 
-A result example between the years 1980 and 2030 is available in example_results. It was made the 10-09-2021.
+More explanations are available on my Blog:
+
+- [surrounding asteroids.]()
+- fireballs (coming soon, stay tuned)
