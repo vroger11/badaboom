@@ -7,10 +7,13 @@ from datetime import datetime
 def gather_fireball_data(api_location="https://ssd-api.jpl.nasa.gov/fireball.api"):
     """Parser that retrieve fireball data from NASA open database.
 
+    Details of the API is there: https://ssd-api.jpl.nasa.gov/doc/fireball.html
+
     Returns
     -------
 
     Dataframe containing all data from the NASA fireball API.
+    Energy of the dataframe is in giga joules.
     """
     database_json = requests.get(api_location).json()
 
@@ -30,4 +33,6 @@ def gather_fireball_data(api_location="https://ssd-api.jpl.nasa.gov/fireball.api
         ])
 
 
-    return pd.DataFrame(casted_data, columns=database_json['fields'])
+    df =  pd.DataFrame(casted_data, columns=database_json['fields'])
+    df["energy"] = df["energy"]*10
+    return df

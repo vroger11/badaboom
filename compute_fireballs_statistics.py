@@ -25,10 +25,10 @@ def main(folder_results):
         os.makedirs(folder_results)
 
     p_energy = np.log(df["energy"]).plot.hist(
-        bins=40,
+        bins=30,
         show_figure=False,
         ylabel="Occurences",
-        xlabel="log(J)",
+        xlabel="log(GJ)",
         title="Energy distribution."
     )
     p_energy.plot_width=1350
@@ -73,7 +73,7 @@ def main(folder_results):
     df_map = df.assign(
         longitude=df["lon-dir"].apply(lambda x: 1 if x == "E" else -1) * df["lon"],
         latitude=df["lat-dir"].apply(lambda x: 1 if x == "N" else -1) * df["lat"],
-        size=np.log(df["energy"]+1)*2,
+        size=np.log(df["energy"]+1)*1.25,
         year=df["date"].apply(lambda x: x.year),
         month=df["date"].apply(lambda x: x.month),
         day=df["date"].apply(lambda x: x.day)
@@ -83,7 +83,7 @@ def main(folder_results):
         x="longitude",
         y="latitude",
         hovertool_string="""<h2> @{year}-@{month}-@{day} </h2>
-                            <h3> Energy value: @{energy}J </h3>
+                            <h3> Energy value: @{energy}GJ </h3>
                             <h3> Impact energy value: @{impact-e}kt </h3>""",
         tile_provider="STAMEN_TERRAIN_RETINA",
         size="size",
