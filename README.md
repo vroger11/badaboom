@@ -20,5 +20,5 @@ python compute_fireballs_statistics.py --help
 
 More explanations are available on my Blog:
 
-- [surrounding asteroids.]()
-- fireballs (coming soon, stay tuned)
+- [surrounding asteroids.](https://website.vincent-roger.fr/blog/dev/2021/09/12/badaboom.html)
+- [fireballs](https://website.vincent-roger.fr/blog/dev/2021/12/15/badaboom_fireball.html)
