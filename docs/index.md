@@ -6,8 +6,6 @@ Database are provided by NASA, more information is available [here](https://api.
 
 In this work, the focus is to better understand/visualize the events from out of the earth.
 
-**Note:** this repo serves me as a template to setup tools for python project. I am not active on it (except to update the development tools).
-
 ## Installation
 
 The following repository use poetry to handle its dependencies, to install badaboom you can type the following:

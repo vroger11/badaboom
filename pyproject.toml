@@ -1,0 +1,102 @@
+[tool.poetry]
+name = "badaboom"
+version = "0.1.0"
+description = "Library to parse data from NASA ressources about what is on top of us."
+authors = ["Vincent ROGER <vroger11@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+plotly = "^5.22.0"
+numpy = "^1.26.4"
+streamlit = "^1.36.0"
+scipy = "^1.14.0"
+tqdm = "^4.66.4"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.26.0"
+ruff = "^0.5.3"
+pytest = "^8.2.2"
+interrogate = "^1.7.0"
+pre-commit = "^3.7.1"
+mkdocs = "^1.6.0"
+mkdocs-mermaid2-plugin = "^1.1.1"
+mkdocs-material = "^9.5.30"
+mkdocstrings = "^0.25.2"
+mkdocstrings-python = "^1.10.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "integration",
+]
+
+[tool.ruff]
+# Set the line length for the formatter
+line-length = 100
+
+# Configure the target version for the formatter (mimicking black's target-version)
+target-version = "py312"
+
+# Define the paths to include and exclude
+include = ["**/*.py", "**/*.pyi"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Enable the specific ruff rules to match black's style and isort's sorting
+select = [
+    "E",  # PEP8 errors
+    "F",  # Pyflakes errors
+    "I",  # isort errors
+    "B",  # pyupgrade (black-like) errors
+    "Q",  # docstyle errors
+]
+
+# Optionally, if you want to use ruff's auto-fix feature
+fix = true
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"

@@ -1,0 +1,22 @@
+site_name: Badaboom documentation
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: black
+
+nav:
+  - Home: index.md
+  - API reference:
+    - Overview: references/init.md
+    - parsers: references/parsers.md
+
+plugins:
+  - search
+  - mermaid2
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: numpy
